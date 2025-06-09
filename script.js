@@ -104,6 +104,7 @@ btnLimpar.addEventListener('click', () => {
 
 function salvarNoLocalStorage() {
   localStorage.setItem('tasks', JSON.stringify(tasks));
+  // o localStorage só consegue armazenar textos (strings). Ele não entende arrays nem objetos diretamente.
 }
 
 function carregarDoLocalStorage() {
